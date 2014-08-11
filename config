@@ -1,0 +1,11 @@
+config_headerfile=header.txt
+config_footerfile=footer.txt
+config_navfile=nav.txt
+config_rssfile=rsshead.txt
+config_indexview=2
+config_rssview=10
+config_navview=5
+config_tagview=5
+config_loc=out
+config_hardlink=
+config_linkout=

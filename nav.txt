@@ -1,0 +1,9 @@
+<div class="nav">
+<b>Meta</b>
+<ul class="blank">
+<li><a href="index.html">Home</a></li>
+</ul>
+<hr />
+<b>Texts</b></small>
+<ul>
+<li class="cat">Recent</li>
