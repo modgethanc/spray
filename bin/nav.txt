@@ -1,0 +1,12 @@
+<div class="nav">
+<b>Meta</b>
+<ul class="blank">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<!---insert other metalinks here-->
+</ul>
+<hr />
+<b>Texts</b></small>
+<ul>
+<li class="cat">Recent | <small><a href="spray.xml">RSS</a></small></li>

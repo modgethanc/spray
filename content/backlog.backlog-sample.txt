@@ -1,0 +1,11 @@
+Backlog Sample
+
+This is a sample backlog file!
+
+Backlog files do not appear in the main post listing; instead, they appear on
+a separate page speciically for backlogs. This is used for posts that do not
+belong in the main chronology.
+
+Tags still work for backlogs.
+
+#samples#backlog

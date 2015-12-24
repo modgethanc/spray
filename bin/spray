@@ -21,8 +21,12 @@ my $NAVFILE = 'nav.txt';
 my $FOOTERFILE = 'footer.txt';
 my $RSSFILE = 'rss.head.txt';
 my $LINKOUT = '';
+my $CONTENT = "../content";
+my $BACKLOGDESC = "Backlogs are used for texts that appear out of the chronology of the main posts.";
 
-my @files = glob("content/*.txt");
+&config;
+
+my @files = glob("$CONTENT/*.txt");
 my %fileDates;
 
 foreach (@files) {
@@ -30,8 +34,6 @@ foreach (@files) {
 }
 
 my @sortedFiles = sort {$fileDates{$b} <=> $fileDates{$a}} keys %fileDates;
-
-&config;
 
 open IN, $HEADERFILE;
 my @header = <IN>;
@@ -81,6 +83,7 @@ sub config { #parses config file; make some sane defaults
                         when (/config_loc/)     { chomp($LOC = $var[1]); }
                         when (/config_hardlink/)        { chomp($HARDLINK = $var[1]); }
                         when (/config_linkout/)         { chomp($LINKOUT = $var[1]); }
+                        when (/config_content/)         { chomp($CONTENT= $var[1]); }
                 }
         }
 }
@@ -132,7 +135,7 @@ sub makeBacklog {     # backlog list
 	print @nav;
 
 	print "<div class=\"content\"><p><b>Backlogs</b></p>\n";
-	print "<p><i>Writings from the past, prior to the inception of this site. They are presented here unaltered, save for formatting and slight syntactical variations to fit the context, with updated epilogues as appropriate. The writing's rough, but old, so go easy on your judgement, okay?</i></p>\n";
+	print "<p><i>$BACKLOGDESC</i></p>\n";
 	print "<ul class=\"texts\">\n";
 
 	foreach (@sortedFiles) {

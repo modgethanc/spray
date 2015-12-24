@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title></title>
+        <link></link>
+        <description></description>
+<item>
+<title>Sample Post</title>
+<link>/sample.html</link>
+<description>You can write whatever you want here. You can tag whatever you want here.</description><pubDate>Thu, 24 Dec 2015 02:39:57 -0320</pubDate>
+</item>
+</channel>
+</rss>

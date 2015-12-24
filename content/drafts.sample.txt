@@ -1,0 +1,4 @@
+Sample Draft
+
+Drafts don't show up on any main list, but you can find a list of them at
+drafts.html so you can sanity-check shit before it goes Super Public.
